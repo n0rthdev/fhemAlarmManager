@@ -13,6 +13,56 @@ so it is able to also read the alarms of third party apps like the Timely Alarm 
 
 ![Screenshot of the apps main screen](https://github.com/napster2202/fhemAlarmManager/raw/master/emulatorshot.PNG "Screenshot of the apps main screen")
 
+## FHEM Config parts
+
+Variables for saving the state, and code for sunrise simulation
+```perl
+define AlarmtimeAndroid dummy
+attr AlarmtimeAndroid setList state:time
+attr AlarmtimeAndroid webCmd state
+
+define AlarmDayAndroid dummy
+attr AlarmDayAndroid setList state:0,1,2,3,4,5,6
+attr AlarmDayAndroid webCmd state
+
+# AlarmAndroid
+define AlarmAndroid at *{ReadingsVal("AlarmtimeAndroid","state","05:30:00")} {\
+    if ($wday eq Value("AlarmDayAndroid")) {\
+     {fhem("set Wake on")}\
+    }\
+}
+
+
+define AlarmChange notify (AlarmtimeAndroid|global:INITIALIZED|global:REREADCFG).* \
+   modify AlarmAndroid *{ReadingsVal("AlarmtimeAndroid","state","05:30:00")}
+
+define Wake dummy
+attr Wake setList state:on,off
+attr Wake webCmd state
+
+define Wake.ntfy notify Wake.* {\
+ if ("$EVENT" ne "off") {\
+{fhem("define on0At at +00:35:00 { if (Value(\"Wake\") eq \"on\") {{fhem(\"set LED on\")}{fhem(\"set LED RGB 000021\")}}{fhem(\"delete on0At\")}}")}\
+{fhem("define on7At at +00:40:00 { if (Value(\"Wake\") eq \"on\") {{fhem(\"set FAN on\")}}{fhem(\"delete on7At\")}}")}\
+{fhem("define on1At at +00:40:00 { if (Value(\"Wake\") eq \"on\") {{fhem(\"set LED RGB 661700\")}}{fhem(\"delete on1At\")}}")}\
+{fhem("define on2At at +00:43:00 { if (Value(\"Wake\") eq \"on\") {{fhem(\"set LED RGB FF3C00\")}}{fhem(\"delete on2At\")}}")}\
+{fhem("define on6At at +00:45:00 { if (Value(\"Wake\") eq \"on\") {{fhem(\"set WOL_X301_2 on\")}}{fhem(\"delete on6At\")}}")}\
+{fhem("define on3At at +00:49:00 { if (Value(\"Wake\") eq \"on\") {{fhem(\"set F_Hal on\")}}{fhem(\"delete on3At\")}}")}\
+{fhem("define on4At at +00:53:00 { if (Value(\"Wake\") eq \"on\") {{fhem(\"set UFO on\")}}{fhem(\"delete on4At\")}}")}\
+{fhem("define on5At at +00:55:00 { if (Value(\"Wake\") eq \"on\") {{fhem(\"set F_Led on\")}}{fhem(\"delete on5At\")}}")}\
+{fhem("define offWake at +01:35:00 { if (Value(\"Wake\") eq \"on\") {{fhem(\"set LED off\")}{fhem(\"set F_Hal off\")}{fhem(\"set UFO off\")}{fhem(\"set F_Led off\")}{fhem(\"set FAN off\")}{fhem(\"set Wake off\")}}{fhem(\"delete offWake\")}}")}\
+ }\
+ else {\
+ #{fhem(\"set LED off\")}\
+ #{fhem(\"set F_Hal off\")}\
+ #{fhem(\"set UFO off\")}\
+ #{fhem(\"set F_Led off\")}\
+ #{fhem(\"set Wake off\")}\
+ #{fhem(\"set FAN off\")}\
+ }\
+}
+```
+
 
 ## FHEM Setup
 
