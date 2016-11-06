@@ -11,7 +11,7 @@ so it is able to also read the alarms of third party apps like the Timely Alarm 
 
 [Timely Alarm Clock - Goolge Play](https://play.google.com/store/apps/details?id=ch.bitspin.timely)
 
-![Screenshot of the apps main screen](fhemAlarmManager/emulatorshot.PNG "Screenshot of the apps main screen")
+![Screenshot of the apps main screen](https://github.com/napster2202/fhemAlarmManager/raw/master/emulatorshot.PNG "Screenshot of the apps main screen")
 
 
 ## FHEM Setup
