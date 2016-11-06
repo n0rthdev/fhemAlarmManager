@@ -1,0 +1,1093 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/ll">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/gridLayout4"
+        android:rowCount="1"
+        android:columnCount="6"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button65"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="startRepeatingTimer"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Auto Update Alarmtime" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button66"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="cancelRepeatingTimer"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="off" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/alarmTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="manualTimerUpdate"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:text="d/hh:mm" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:id="@+id/gridLayout3"
+        android:rowCount="1"
+        android:columnCount="9"
+        android:layout_gravity="center_horizontal" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/BedGrid"
+        android:rowCount="1"
+        android:columnCount="9">
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button0"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Bed"
+            android:tag="BedOn" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button1"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:tag="Bed0" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button2"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:tag="Bed1" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button3"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:tag="Bed3" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button4"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:tag="Bed2" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button5"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:tag="Bed4" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button6"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="colorPickerClick"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:tag="Bed5"
+            android:text="CP" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button7"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:text="off"
+            android:tag="BedOff" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/DeskGrid"
+        android:rowCount="1"
+        android:columnCount="9"
+        android:layout_gravity="right">
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Desk"
+            android:tag="DeskOn" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button8"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:tag="Desk0" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button9"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:tag="Desk1" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button10"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:tag="Desk3" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button11"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:tag="Desk2" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button12"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:tag="Desk4" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button13"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="colorPickerClick"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:tag="Desk5"
+            android:text="CP" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button14"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:text="off"
+            android:tag="DeskOff" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/DoorsGrid"
+        android:rowCount="1"
+        android:columnCount="9">
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button15"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Doors"
+            android:tag="DoorsOn" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button16"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:tag="Doors0" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button17"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:tag="Doors1" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button18"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:tag="Doors3" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button19"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:tag="Doors2" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button20"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:tag="Doors4" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button21"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="colorPickerClick"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:tag="Doors5"
+            android:text="CP" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button22"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:text="off"
+            android:tag="DoorsOff" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/LeftGrid"
+        android:rowCount="1"
+        android:columnCount="9" >
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button23"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Left"
+            android:tag="LeftOn" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button24"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:tag="Left0" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button25"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:tag="Left1" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button26"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:tag="Left3" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button27"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:tag="Left2" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button28"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:tag="Left4" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button29"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="colorPickerClick"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:tag="Left5"
+            android:text="CP" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button30"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:text="off"
+            android:tag="LeftOff" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/RightGrid"
+        android:rowCount="1"
+        android:columnCount="9" >
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button31"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Right"
+            android:tag="RightOn" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button32"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:tag="Right0" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button33"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:tag="Right1" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button34"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:tag="Right3" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button35"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:tag="Right2" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button36"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:tag="Right4" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button37"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="colorPickerClick"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:tag="Right5"
+            android:text="CP" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button38"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:text="off"
+            android:tag="RightOff" />
+    </GridLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/TopGrid"
+        android:rowCount="1"
+        android:columnCount="9" >
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button39"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Top"
+            android:tag="TopOn" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button40"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:tag="Top0" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button41"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:tag="Top1" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button42"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:tag="Top3" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button43"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:tag="Top2" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button44"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:tag="Top4" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button45"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="colorPickerClick"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:tag="Top5"
+            android:text="CP" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button46"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:text="off"
+            android:tag="TopOff" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:id="@+id/seperator1"
+        android:rowCount="1"
+        android:columnCount="9"
+        android:layout_gravity="right">
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/AllGrid"
+        android:rowCount="1"
+        android:columnCount="9" >
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button47"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="All"
+            android:tag="AllOn" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button48"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:tag="All0" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button49"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:tag="All1" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button50"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:tag="All3" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button51"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:tag="All2" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button52"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:tag="All4" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button53"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="colorPickerClick"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:tag="All5"
+            android:text="CP" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button54"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="8"
+            android:text="off"
+            android:tag="AllOff" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:id="@+id/gridLayout"
+        android:rowCount="1"
+        android:columnCount="9"
+        android:layout_gravity="center_horizontal" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/gridLayout5"
+        android:rowCount="1"
+        android:columnCount="6">
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button68"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="NA"
+            android:tag="NightAll" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button69"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="RB"
+            android:tag="RedBlue" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button71"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:text="GB"
+            android:tag="GreenBlue" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button70"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:text="RBP"
+            android:tag="RedBluePink" />
+
+        <Button
+            tools:context=".WidgetAlarmManagerActivity"
+            android:id="@+id/button63"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:padding="@dimen/padding_medium"
+            android:onClick="webButtonClick"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="N"
+            android:tag="Night" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:id="@+id/gridLayout6"
+        android:rowCount="1"
+        android:columnCount="9"
+        android:layout_gravity="center_horizontal" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/sockets12"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:layout_gravity="center_horizontal">
+
+        <GridLayout
+            android:layout_width="176dp"
+            android:layout_height="36dp"
+            android:id="@+id/socket2"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_column="1" >
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button55"
+                android:layout_width="112dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Hal"
+                android:tag="HalOn" />
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button58"
+                android:layout_width="64dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="off"
+                android:tag="HalOff" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="176dp"
+            android:layout_height="36dp"
+            android:id="@+id/socket1"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_column="0">
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button56"
+                android:layout_width="112dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Led"
+                android:tag="LedOn" />
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button57"
+                android:layout_width="64dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="off"
+                android:tag="LedOff" />
+        </GridLayout>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/sockets34"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:layout_gravity="center_horizontal" >
+
+        <GridLayout
+            android:layout_width="176dp"
+            android:layout_height="36dp"
+            android:id="@+id/socket4"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_column="1" >
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button59"
+                android:layout_width="112dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Fan"
+                android:tag="FanOn" />
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button60"
+                android:layout_width="64dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="off"
+                android:tag="FanOff" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="176dp"
+            android:layout_height="36dp"
+            android:id="@+id/socket3"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_column="0" >
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button61"
+                android:layout_width="112dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Ufo"
+                android:tag="UfoOn" />
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button62"
+                android:layout_width="64dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="off"
+                android:tag="UfoOff" />
+        </GridLayout>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:id="@+id/gridLayout2"
+        android:rowCount="1"
+        android:columnCount="9" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/gridLayout9"
+        android:rowCount="1"
+        android:columnCount="2">
+
+        <GridLayout
+            android:layout_width="176dp"
+            android:layout_height="36dp"
+            android:id="@+id/gridLayout7"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_column="1" >
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button72"
+                android:layout_width="112dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Sun"
+                android:tag="SunOn" />
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button73"
+                android:layout_width="64dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="off"
+                android:tag="SunOff" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="176dp"
+            android:layout_height="36dp"
+            android:id="@+id/gridLayout8"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_column="0" >
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button74"
+                android:layout_width="87dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Server"
+                android:tag="WolServer" />
+
+            <Button
+                tools:context=".WidgetAlarmManagerActivity"
+                android:id="@+id/button75"
+                android:layout_width="87dp"
+                android:layout_height="34dp"
+                android:padding="@dimen/padding_medium"
+                android:onClick="webButtonClick"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="Xeon"
+                android:tag="WolXeon" />
+        </GridLayout>
+    </GridLayout>
+
+</LinearLayout>
