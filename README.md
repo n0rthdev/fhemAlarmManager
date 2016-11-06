@@ -25,8 +25,8 @@ The [Power-Sockets](http://amzn.to/2dC6brg) are connected via USB to the Raspber
 [WIFI-RGB-Controller #2](http://amzn.to/2e24NS3) (2 devices)
 
 The old models of #1 works perfect even better than #2. With controllers of the current version I had troubles connecting them to my Wifi-Network. All these models look similar and have the same name, although they have completely different firmware.
-#1 setting custom IP and changing the admin password
-#2 can only use IP from DHCP, which makes it harder to use with FHEM.
+1. setting custom IP and changing the admin password
+2. can only use IP from DHCP, which makes it harder to use with FHEM.
 I set up a DHCP server and configured it so that the MAC-Addresses of the RGB-Wifi Controllers always get a specified IP. The DHCP server is installed on the same RaspberryPi as FHEM.
 
 FHEM: http://www.fhemwiki.de/wiki/WifiLight
