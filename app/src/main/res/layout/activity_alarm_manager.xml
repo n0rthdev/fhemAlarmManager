@@ -259,7 +259,7 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="36dp"
-        android:id="@+id/DoorsGrid"
+        android:id="@+id/WindowGrid"
         android:rowCount="1"
         android:columnCount="9">
 
@@ -272,8 +272,8 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="0"
-            android:text="Doors"
-            android:tag="DoorsOn" />
+            android:text="Window"
+            android:tag="WindowOn" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -284,7 +284,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="2"
-            android:tag="Doors0" />
+            android:tag="Window0" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -295,7 +295,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="3"
-            android:tag="Doors1" />
+            android:tag="Window1" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -306,7 +306,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="5"
-            android:tag="Doors3" />
+            android:tag="Window3" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -317,7 +317,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="4"
-            android:tag="Doors2" />
+            android:tag="Window2" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -328,7 +328,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="6"
-            android:tag="Doors4" />
+            android:tag="Window4" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -339,7 +339,7 @@
             android:onClick="colorPickerClick"
             android:layout_row="0"
             android:layout_column="7"
-            android:tag="Doors5"
+            android:tag="Window5"
             android:text="CP" />
 
         <Button
@@ -352,7 +352,7 @@
             android:layout_row="0"
             android:layout_column="8"
             android:text="off"
-            android:tag="DoorsOff" />
+            android:tag="WindowOff" />
     </GridLayout>
 
     <GridLayout
@@ -558,7 +558,7 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="36dp"
-        android:id="@+id/TopGrid"
+        android:id="@+id/DoorsGrid"
         android:rowCount="1"
         android:columnCount="9" >
 
@@ -571,8 +571,8 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="0"
-            android:text="Top"
-            android:tag="TopOn" />
+            android:text="Doors"
+            android:tag="DoorsOn" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -583,7 +583,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="2"
-            android:tag="Top0" />
+            android:tag="Doors0" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -594,7 +594,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="3"
-            android:tag="Top1" />
+            android:tag="Doors1" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -605,7 +605,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="5"
-            android:tag="Top3" />
+            android:tag="Doors3" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -616,7 +616,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="4"
-            android:tag="Top2" />
+            android:tag="Doors2" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -627,7 +627,7 @@
             android:onClick="webButtonClick"
             android:layout_row="0"
             android:layout_column="6"
-            android:tag="Top4" />
+            android:tag="Doors4" />
 
         <Button
             tools:context=".WidgetAlarmManagerActivity"
@@ -638,7 +638,7 @@
             android:onClick="colorPickerClick"
             android:layout_row="0"
             android:layout_column="7"
-            android:tag="Top5"
+            android:tag="Doors5"
             android:text="CP" />
 
         <Button
@@ -651,7 +651,7 @@
             android:layout_row="0"
             android:layout_column="8"
             android:text="off"
-            android:tag="TopOff" />
+            android:tag="DoorsOff" />
     </GridLayout>
 
     <GridLayout

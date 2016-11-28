@@ -22,8 +22,8 @@ public class AlarmManagerActivity extends Activity {
 
     public static final String FHEM_COMMAND_URL = "http://192.168.1.2:8083/fhem?cmd=";
 
-    final static String[] device_tags = new String[]{"Bed", "Desk", "Doors", "Left", "Right", "Top", "All"};
-    final static String[] devices = new String[]{"Bed", "Desk", "LockerDoors", "LockerLeft", "LockerRight", "LockerTop", "LED"};
+    final static String[] device_tags = new String[]{"Bed", "Desk", "Window", "Left", "Right", "Doors", "All"};
+    final static String[] devices = new String[]{"Bed", "Desk", "Window", "LockerLeft", "LockerRight", "LockerDoors", "LED"};
 
     final static String[] on_off_device_tags = new String[]{"Led", "Hal", "Ufo", "Fan", "Sun"};
     final static String[] on_off_devices = new String[]{"F_Led", "F_Hal", "UFO", "FAN", "SUN"};
