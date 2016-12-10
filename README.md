@@ -1,6 +1,6 @@
 # fhemAlarmManager
 This is a very small (and dirty) application that is able to read the next alarm time of android and post it to your FHEM server to trigger an event.
-For this implementation the FHEM server runs the on IP 192.168.1.2.
+For this implementation the FHEM server runs the on IP 192.168.1.3.
 The trigger time sent to FHEM is exactly one hour ahead of your alarm.
 I also integrated some remote controll options for my setup.
 
