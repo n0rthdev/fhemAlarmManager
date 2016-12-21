@@ -28,8 +28,8 @@ public class AlarmManagerActivity extends Activity {
     final static String[] on_off_device_tags = new String[]{"Led", "Hal", "Ufo", "Fan", "Sun"};
     final static String[] on_off_devices = new String[]{"F_Led", "F_Hal", "UFO", "FAN", "SUN"};
 
-    final static String[] on_device_tags = new String[]{"WolServer", "WolXeon", "NightAll", "Night", "RedBlue", "GreenBlue", "RedBluePink"};
-    final static String[] on_devices = new String[]{"WOL_Server", "WOL_Xeon", "NIGHT_ALL", "NIGHT", "RED_BLUE", "GREEN_BLUE", "RED_BLUE_PINK"};
+    final static String[] on_device_tags = new String[]{"WolServer", "ResetFHEM", "NightAll", "Night", "RedBlue", "GreenBlue", "RedBluePink"};
+    final static String[] on_devices = new String[]{"WOL_Server", "Restart_FHEM", "NIGHT_ALL", "NIGHT", "RED_BLUE", "GREEN_BLUE", "RED_BLUE_PINK"};
 
     final static String colors0 = "FF0000";
     final static String colors1 = "00FF00";
